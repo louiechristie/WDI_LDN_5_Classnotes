@@ -125,21 +125,6 @@ You can install a lot of others themes, plugins, extensions, syntax highlighters
 * `Cmd + shift + f` brings you to the search and replace menu
 * If you press `Cmd + alt + f`, the window at the bottom should appear with 3 inputs: one for the word to find, one for the path, one for the replace value. If you type `<project>` inside the "path" text input, the search will only be executed within the scope of the current project.
 
-
-**Sublime settings**
-
-``Cmd + ```, allows you to access the preferences settings.
-
-It opens this file as a JSON object (we will learn all about JSON in the next few weeks). 
-It basically presents the settings as a series of keys and values - you can add keys/values, and/or modify the existing values to fit your personal preferences.
-
-For now, add the following:
-
-`"tab_size": 2,`
-
-`"translate_tabs_to_spaces": true`
-
-
 ### Cursor tricks
 
 * Put the cursor before the first character, press "Alt" and drag the cursor at the end the paragraph -> will allow you to enter text before all of the selected lines
