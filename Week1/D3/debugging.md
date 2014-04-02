@@ -98,3 +98,8 @@ If you got lost and cannot remember where you are in your program, `whereami` wi
 "Pry" and "pry-byebug" have a lot more features (especially pry) than we've covered in class today. 
 
 Check out [github/pry](https://github.com/pry/pry) for additional information.
+
+###ADDITIONAL RESOURCES
+
+Debugging in Ruby:  
+<https://github.com/pry/pry>

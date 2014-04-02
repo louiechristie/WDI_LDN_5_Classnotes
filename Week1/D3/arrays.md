@@ -98,3 +98,9 @@ To remove any duplicate elements we can use `_.uniq`
 
 We can use intersection on our arrays by using the `&`  
 `[1,2,3] & [3,4,5]  ` RETURNS   `[3]` 
+
+###ADDITIONAL RESOURCES
+
+Ruby Arrays:  
+<http://ruby-doc.org/core-2.0.0/Array.html>  
+

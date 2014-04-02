@@ -160,3 +160,10 @@ There are many reasons to use hashes, as they are:
 
 Hashes are a good choice, when simply getting & setting temporary data
 As mentioned before, hash values can be any type of object
+
+
+Ruby Symbols and Hashes:  
+<http://www.ruby-doc.org/core-2.0/Hash.html>  
+<http://www.tutorialspoint.com/ruby/ruby_quick_guide.htm>  
+
+

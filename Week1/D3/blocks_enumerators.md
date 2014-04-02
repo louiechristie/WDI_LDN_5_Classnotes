@@ -90,7 +90,7 @@ The method `.reject` returns everything which does not match the block:
 
 ####Inject:
 
-The `.inject` method combines all the elements of the enumeration by applying a binary operation, specified by a block or a symbol that names a method or operator.
+The `.inject` (aka `.reduce`) method combines all the elements of the enumeration by applying a binary operation, specified by a block or a symbol that names a method or operator.
 
 If you specify a block, then for each element in the enumeration the block is passed an accumulator value (memo) and the element. If you specify a symbol instead, then each element in the collection will be passed to the named method of memo. In either case, the result becomes the new value for memo. At the end of the iteration, the final value of memo is the return value for the method.
 
@@ -122,7 +122,7 @@ $ longest
 
 ####Collect:
 
-The `.collect` method returns a new array with the results of running block once for every element in the enumeration.
+The `.collect` (aka `.map`) method returns a new array with the results of running block once for every element in the enumeration.
 
 If no block is given, an enumerator is returned instead.
 
@@ -225,3 +225,8 @@ $ end
 ```
 $(1..10).to_a.find_all{ |value| value % 3 == 0}
 ```
+
+###ADDITIONAL RESOURCES
+
+Ruby Blocks and Enumerables:  
+<http://ruby-doc.org/core-2.0.0/Enumerable.html>  
