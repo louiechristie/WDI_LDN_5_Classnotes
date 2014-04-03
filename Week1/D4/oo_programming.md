@@ -31,14 +31,14 @@ $ end
 
 → we've defined the Person class, and gave it the property "talk".
 
-Then let's instantiate it:  
-`$ bob = Person.new`  
+Then let's instantiate it:
+`$ bob = Person.new`
 → when creating an instance of a class, we are basically calling the `.new` method on the class. 
 
-Then we can check what type of object Bob is:  
+Then we can check what type of object Bob is:
 `$ bob.class    RETURNS   Person`
 
-We can call the `.talk()` method which we defined in the Person class. This is an instance method. We are calling it on the instance:  
+We can call the `.talk()` method which we defined in the Person class. This is an instance method. We are calling it on the instance:
 `$ bob.talk("hello")    RETURNS   "I say, hello"`
 
 Lets reopen our Person class and add a familiar method. Note: we can also reopen Ruby's classes and change them, but this is not advised, as it will confuse other developers working on your code. This is called Monkey-Patching.
@@ -104,7 +104,7 @@ $ end
 
 We now have a method to set the age; `age=()` and a method to get the age; `age()`. It's useful to note that there is nothing special about the '=' sign in the setter method, it is purely syntactic sugar as we'll see below.
 
-Now, outside of the class:  
+Now, outside of the class:
 
 ```
 $ bob = Person.new
@@ -122,7 +122,7 @@ Fortunately, Ruby gives us a simpler way of achieving this, by using "attr_write
 Example:
 
 ```
-$ Class Person  
+$ Class Person
 $  attr_reader :age
 $  attr_writer :age
 ```
@@ -147,7 +147,7 @@ $ alice.age   RETURNS   18
 A faster way to set your attribute to be both readable and writable it to use "attr_accessor":
 
 ```
-class Person  
+class Person
   attr_accessor :age, :gender
 
   def talk say_what
@@ -184,10 +184,10 @@ Example:
 
 To illustrate this concept, let's rewrite the Person class with an initializer so we can set the age at the time of the creation of the instance. We do this using an instance hash.
 
-If we take our Person class example from earlier:  
+If we take our Person class example from earlier:
 
 ```
-class Person  
+class Person
   def initialize(options={})
     @age = options[:age]
   end
@@ -210,17 +210,21 @@ fred.get_age    RETURNS   25
 So far we have been building instance variables. Let's look at an example of class variable:
 
 ```
-class Person  
+class Person
   @@toe_count = 10
+
   def initialize(options={})
     @age = options[:age]
   end
+
   def get_age
     @age
   end
+
   def toe_count
     @@toe_count
   end
+
   def toe_count=(value)
     @@toe_count = value
   end
@@ -244,7 +248,7 @@ A **class method** is defined using the keyword "def" followed by "self.methodna
 Example:
 
 ```
-class Person  
+class Person
 
   attr_accessor :age
   attr_accessor :parent1
@@ -278,7 +282,7 @@ The attr_accessor makes "age" and "parents" available to us outside of the Perso
 ```
 bob.parent1 RETURNS   nil
 bob.parent2 RETURNS   nil
-Person.marry(Person.new, Person.new)    
+Person.marry(Person.new, Person.new)
 RETURNS   Person1 @age=nil, parent1=Person2, parent2=Person3
 ``` 
 

@@ -27,14 +27,14 @@ class B < A
 end
 ```
 
-Now in pry:  
-`$ b = B.new`  
+Now in pry:
+`$ b = B.new`
 `$ b.y  RETURNS "I am a class method from A"`
 
-You can also set the random_property from class A in the child class B.  
+You can also set the random_property from class A in the child class B.
 `$ b.random_property = "I am actually interacting with an attribute in the class A"`
 
-Another example:  
+Another example:
 A good example is of a mammal. We have different types of mammals, but they all share some common features.
 
 ```
@@ -99,8 +99,8 @@ class B < A
 end
 ```
 
-Now in pry:  
-`$ b = B.new`  
+Now in pry:
+`$ b = B.new`
 `$ b.y  RETURNS "I am a class method from B"`
 
 → As you can see, the "y" method has been overridden.
@@ -112,5 +112,5 @@ To get a better idea of the concept of inheritance, you can call the .ancestors 
 
 ##ADDITIONAL RESOURCES
 
-Inheritance:  
+Inheritance:
 <http://www.railstips.org/blog/archives/2009/05/11/class-and-instance-methods-in-ruby/>
