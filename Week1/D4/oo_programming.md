@@ -81,19 +81,24 @@ To illustrate this, lets define a more complex class. It will have an "age" inst
 Example:
 
 ```
-$ class Person  
+$ class Person
+$
 $  def speak 
 $    puts "good morning from a #{@age} year old"
 $  end
+$
 $  def talk(words_to_say)
 $    puts "I say, #{words_to_say}"
 $  end
+$
 $  def age=(value)
 $    @age = value
 $  end
+$
 $  def age
 $    @age
 $  end
+$
 $ end
 ```
 
