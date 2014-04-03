@@ -1,3 +1,18 @@
+## Rental Lab
+
+### Overview
+=========
+You have been asked to build an app to manage rentals for an estate agent. Let's use object orientated concepts to solve this problem.
+
+### Tasks
+========
+* Manage buildings, flats, and tenants etc.
+* Manage buildings. Track its location, affluency, whether is has a lift, etc. and which flats it contains.
+* Manage flats. Track its price, beds, bathroom, size etc. and which tenants currently live there.
+* Manage tenants. Track contact details, budget, occupation and so on.
+
+=========
+
 ## Homework 
 
 ### Overview
