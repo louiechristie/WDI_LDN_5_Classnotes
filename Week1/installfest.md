@@ -67,19 +67,47 @@
 `gem install bundler`
 `rbenv rehash` (because we’ve installed a new binary)
 
+### Install Git
+1. This ensures we can upgrade Git more easily:
+`brew install git`
+
 ### Customise Bash
 
-1. set up to ignore case sensitivity
+1. Enable colours for things that care about it (eg. ls)
+`echo 'export CLICOLOR=1' >> ~/.bashrc
+2. Use less as your pager:
+`echo 'export PAGER=less' >> ~/.bashrc`
+3. Don't use pager when tab completing things on the commandline (just list them all)
+`echo 'set page-completions off' >> ~/.inputrc
+4. Set sublime as the default editor:
+`echo "export EDITOR='subl -w -n'" >> ~/.bashrc`
+5. Make more things bash completable (git commands and files etc)
+  - `brew install bash-completion`
+  - Add this to .bashrc (you probably want to hipchat it to them)
+  ```
+    if [ -f $(brew --prefix)/etc/bash_completion ]; then
+      . $(brew --prefix)/etc/bash_completion
+    fi
+    ```
+6. Load the git-prompt in your .bashrc: 
+```
+  if [ -f $(brew --prefix)/etc/bash_completion.d/git-prompt.sh ]; then
+    . $(brew --prefix)/etc/bash_completion.d/git-prompt.sh
+  fi
+```
+7. Customise your PS1 variable to be friendlier/more useful: 
+`echo "export PS1='\$__git_ps1 \"(%s) \") \W \$ '" >> ~/.bashrc`
+8. Make git-prompt show whether the branch is dirty or not:
+`echo "export GIT_PS1_SHOWDIRTYSTATE=1" >> ~/.bashrc`
+9. set up to ignore case sensitivity
 `echo "set completion-ignore-case on" >> ~/.inputrc`
-2. tolerate hyphens and underscores too 
+10. tolerate hyphens and underscores too 
 `echo "set completion-map-case on" >> ~/.inputrc`
-3. make symlinks look ‘better’
+11. make symlinks look ‘better’
 `echo "set mark-symlinked-directories on" >> ~/.inputrc`
-4. show ambiguous files/directories to choose
+12. show ambiguous files/directories to choose
 `echo "set show-all-if-ambiguous on" >> ~/.inputrc`
-5. use `tab` to toggle through ambiguous files/directories
-`echo "TAB: menu-complete" >> ~/.inputrc`
-6. ensure bash_profile reads the bashrc file
+13. ensure bash_profile reads the bashrc file
 `echo "source ~/.bashrc" >> ~/.bash_profile`
 
   
@@ -91,9 +119,3 @@
 1. Download [PostgreSQL](http://postgresapp.com/)
 2. Unzip the downloaded file and drag to `applications`
 3. Choose `automatically start at login`
-
-### Install Git
-1. This ensures we can upgrade Git more easily:
-`brew install git`
-2. Set sublime as the default editor for commit messages:
-`echo "export EDITOR='subl -w -n'" >> ~/.bash`
