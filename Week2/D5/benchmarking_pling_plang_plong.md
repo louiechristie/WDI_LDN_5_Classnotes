@@ -1,5 +1,3 @@
-# Week 2 Day 5 - 2014.01.17
-
 ## Pling Plong Plang solutions
 
 ###Mike's solution
