@@ -74,11 +74,11 @@
 ### Customise Bash
 
 1. Enable colours for things that care about it (eg. ls)
-`echo 'export CLICOLOR=1' >> ~/.bashrc
+`echo 'export CLICOLOR=1' >> ~/.bashrc`
 2. Use less as your pager:
 `echo 'export PAGER=less' >> ~/.bashrc`
 3. Don't use pager when tab completing things on the commandline (just list them all)
-`echo 'set page-completions off' >> ~/.inputrc
+`echo 'set page-completions off' >> ~/.inputrc`
 4. Set sublime as the default editor:
 `echo "export EDITOR='subl -w -n'" >> ~/.bashrc`
 5. Make more things bash completable (git commands and files etc)
