@@ -96,7 +96,7 @@
   fi
 ```
 7. Customise your PS1 variable to be friendlier/more useful: 
-`echo "export PS1='\$__git_ps1 \"(%s) \") \W \$ '" >> ~/.bashrc`
+`echo "export PS1='\$(__git_ps1 \"(%s) \") \W \$ '" >> ~/.bashrc`
 8. Make git-prompt show whether the branch is dirty or not:
 `echo "export GIT_PS1_SHOWDIRTYSTATE=1" >> ~/.bashrc`
 9. set up to ignore case sensitivity
