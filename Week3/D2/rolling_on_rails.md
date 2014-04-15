@@ -43,7 +43,7 @@ The criticism of rails that it is too complex to use is still true to an extent 
 
 run the following commands in the terminal:
 
-`$ gem install rails -v=3.2.16`  
+`$ gem install rails -v=3.2.17`  
 `$ rbenv rehash`  
 
 This has just installed the rails gem (and several gems that it depends on), and the rehash has made sure that the rails command is now accessible.
