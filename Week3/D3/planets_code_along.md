@@ -77,7 +77,7 @@ then in terminal
 
 ```
 <% @planets.each do |planet| % >
-  <%= planet.name %> has <%= pluralize(planet.moons, 'moon') %> .
+  <%= planet.name %> has <%= pluralize(planet.moons, 'moon') %>
   <br >
 <% end %> 
 ```
