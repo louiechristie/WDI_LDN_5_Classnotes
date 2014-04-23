@@ -76,8 +76,8 @@ then in terminal
 ### In index view (views / planets)
 
 ```
-<% @planets.each do |planet| % >
-  <%= planet.name %> has <%= pluralize(planet.moons, 'moon') %> .
+<% @planets.each do |planet| %>
+  <%= planet.name %> has <%= pluralize(planet.moons, 'moon') %>
   <br >
 <% end %> 
 ```
