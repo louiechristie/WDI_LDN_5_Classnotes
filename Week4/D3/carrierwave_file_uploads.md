@@ -16,6 +16,9 @@ We will need to add the gem to our gemfile.
 
 `gem 'carrierwave'`
 
+For rails 3.2
+`gem 'carrierwave', '= 0.9.0'`
+
 Now we will need to run bundle:
 
 `bundle`
