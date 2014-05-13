@@ -268,12 +268,12 @@ However, we don't want to manually create these environment variables every time
 
 That way, every new shell we launch will have these credentials available as environment variables. 
 
-To do so, we can add the following to .zshrc:  
+To do so, we can add the following to ~/.bashrc:  
 `export AWS_ACCESS_KEY_ID=AK9999999999999999999`  
 `export AWS_SECRET_ACCESS_KEY=p9pkzBevqrererereiu99sdfsadf99999`  
 `export WDI_S3_BUCKET=wdi-london-sep-2013-jon-c`  
 
-We need to create a new terminal window or run `$ source .zshrc` in order for those new settings to take effect. Verify that they are available in terminal before continuing.
+We need to create a new terminal window or run `$ source source ~/.bashrc` in order for those new settings to take effect. Verify that they are available in terminal before continuing.
 
 Now we can change our carrier wave initialiser to make use of these new ENV variables:  
 
