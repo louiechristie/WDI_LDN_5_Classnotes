@@ -8,7 +8,7 @@ We're going to integrate RSpec into a Rails app.
 Edit the gemfile to add the required files.
 
     group :development, :test do
-      gem 'rspec-rails'
+      gem 'rspec-rails', '2.14.1'
       gem 'factory_girl_rails'
     end
 
