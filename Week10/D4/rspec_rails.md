@@ -101,3 +101,21 @@ http://rubydoc.info/gems/faker/1.3.0/frames
 When we run these specs, they fail... because we haven't added validation to our model to require the presence of a name.
 
 Now it's just a case of writing more tests and code, and learning about Faker, Capybara, Guard, etc. But that's beyond the scope of this lesson.
+
+## Do you want code coverage?
+
+To give you some notification of the lines of your code that get passed over while running tests, you can install the 'SimpleCov' gem:
+
+    gem 'simplecov', '~> 0.7.1', require: false
+
+And configure RSpec to only run it when the environment variable `COVERAGE` is set.
+
+    # spec/spec_helper.rb
+    require 'simplecov'
+    SimpleCov.start('rails') if ENV['COVERAGE']
+
+To run this now, from the command line call:
+
+    COVERAGE=true rake spec
+
+The coverage files will be generated into a `coverage` folder in the root of the application - you will not want to commit these to git, so add it to the .gitignore file.
