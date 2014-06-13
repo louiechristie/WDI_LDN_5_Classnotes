@@ -151,7 +151,7 @@ To change the data type or the options of a field, we need to use the following 
 
 To rename tables or columns, we use the following commands in our migration file:  
 `rename_table :old_name, :new_name`  
-`rename_column :table_name, :old_name :new_name`
+`rename_column :table_name, :old_name, :new_name`
 
 
 ###Rake actions:
